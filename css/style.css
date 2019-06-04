@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navigation .bg-image {
+    background: url(../img/home-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#navigation .bw-gradient {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.86) 0%, rgba(0,0,0,0.5) 13%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.86) 0%,rgba(0,0,0,0.5) 13%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.86) 0%,rgba(0,0,0,0.5) 13%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db000000', endColorstr='#00000000',GradientType=0 );
+}
+
+#navigation .bw-gradient .container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#navigation .bw-gradient .container h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#navigation .bw-gradient .container p {
+    font-size: 30px;
+    font-weight: 500px;
+    margin-top: 10px;
+}
+
+#navigation .header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+}
+
+#navigation .sub-header {
+    position: relative;
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#navigation .sub-header.active {
+    width: 100%;
+    height: 50px;
+    background: #000;
+}
+
+#navigation .sub-header .left-menu {
+    float: left;
+}
+
+#navigation .sub-header.active .left-menu {
+    margin: 0 50px;
+}
+
+#navigation .sub-header .logo a {
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    top: 15px;
+}
+
+#navigation .sub-header.active .logo a {
+    font-size: 25px;
+    top: 8px;
+}
+
+#navigation .sub-header .right-menu {
+    float: right;
+}
+
+#navigation .sub-header.active .right-menu {
+    margin: 0 10px;
+}
+
+#navigation .sub-header ul li {
+    float: left;
+    list-style: none;
+    min-width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 2px;
+    padding: 0 7px;
+}
+
+#navigation .sub-header.active ul li {
+    margin: 5px 25px;
+}
+
+#navigation .sub-header ul li a {
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+#navigation .sub-header.active ul li a {
+    color: #fff;
+}
+
+#navigation .sub-header ul li:hover a {
+    background: #fff;
+    color: #000;
+    border-radius: 2px;
+}
+
+#navigation .sub-header.active ul li a {
+    color: #fff;
+}
+
+#navigation .sub-header.active ul li:hover a {
+    color: #000;
+    background: #fff;
+}
+
+@media screen and (max-width:1200px) {
+    #navigation .sub-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #navigation .sub-header {
+        background: #000;
+        height: 50px;
+    }
+
+    #navigation .sub-header .logo a {
+        top: 5px;
+    }
+
+    #navigation .sub-header ul {
+        position: relative;
+        top: 50px;
+        overflow: hidden;
+        width: auto;
+        margin: 0;
+    }
+
+    #navigation .sub-header .left-menu {
+        float: none;
+    }
+
+    #navigation .sub-header .right-menu {
+        float: none;
+    }
+
+    #navigation .sub-header ul li {
+        width: 100%;
+        height: 30px;
+        margin: 10px 0;
+    }
+
+    #navigation .sub-header ul li a {
+        color: #fff;
+    }
+
+    #navigation .sub-header.active ul {
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #navigation .sub-header .logo a {
+        top: 5px;
+    }
+
+    #navigation .sub-header ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    #navigation .sub-header ul li {
+        width: 100%;
+        height: 30px;
+        margin: 3px 0px;
+    }
+
+    #navigation .sub-header ul li a {
+        color: #fff;
+    }
+
+    #navigation .sub-header.active ul {
+        height: 0;
+        overflow: hidden;
+    }
+}
+/* blog */
+
+#blog {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#blog .container .blog-content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+#blog .container .blog-content a {
+    text-decoration: none;
+}
+
+#blog .container .blog-content .blog-header {
+    font-size: 35px;
+    color: #000;
+    font-weight: 500;
+}
+
+#blog .container .blog-content .blog-subheader {
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+}
+
+#blog .container .blog-footer {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#blog .container .blog-footer em {
+    color: grey;
+}
+
+#blog .container .submit-btn .btn {
+    padding: 15px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+}
+
+#blog .container .blog-content .main-header {
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+#blog .container .blog-content .blog-main {
+    font-size: 20px;
+}
+
+/* contact */
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contact .container .contact-heading {
+    color: #000;
+    font-size: 40px;
+}
+
+#contact .container .contact-subheading {
+    color: #000;
+    font-size: 20px;
+}
+
+#contact .container .form-group input[type=text],
+#contact .container .form-group input[type=email],
+#contact .container .form-group input[type=tel] {
+    padding: 30px;
+    outline: none !important;
+}
+
+#contact .container .form-group textarea {
+    height: 250px;
+}
+
+::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#contact .container .form-group {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#contact .container .btn {
+    padding: 15px;
+    margin: 20px;
+    color: #fff;
+    font-size: 20px;
+    background: #000;
+    outline: none !important;
+}
+
+
+#footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#footer .container span {
+    color: #000;
+    font-size: 30px;
+}

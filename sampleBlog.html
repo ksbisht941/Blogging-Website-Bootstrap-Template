@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- navigation -->
+    <section id="navigation">
+        <div class="bg-image">
+            <div class="bw-gradient">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 header">
+                            <h1 class="text-center text-uppercase">Sample Blog</h1>
+                            <p class="text-center text-capitalize">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <div class="sub-header text-capitalize font-weight-bold">
+                    <ul class="left-menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                    </ul>
+                    <div class="logo">
+                        <a href="#">CodeDriller</a>
+                    </div>
+                    <ul class="right-menu">
+                        <li><a href="sampleBlog.html">sample blog</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="blog-content text-center text-capitalize">
+                        <h4 class="main-header font-weight-bold text-justify">i'm not a great programmer; i'm just a good programmer with graet habits.</h4>
+                        <div class="blog-main text-justify text-muted">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illo laborum! Nulla dignissimos ipsam suscipit dicta in, voluptatem dolores labore et a? Iste temporibus hic commodi reiciendis maiores distinctio libero perferendis. Vel praesentium voluptates deserunt animi magni veritatis fugit, rerum facere minima reprehenderit, necessitatibus cumque! Quam odio sapiente nihil delectus.</p>
+                        </div>
+
+                        <h4 class="main-header font-weight-bold text-justify">when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people . so ceate.</h4>
+                        <div class="blog-main text-justify text-muted">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illo laborum! Nulla dignissimos ipsam suscipit dicta in, voluptatem dolores labore et a? Iste temporibus hic commodi reiciendis maiores distinctio libero perferendis. Vel praesentium voluptates deserunt animi magni veritatis fugit, rerum facere minima reprehenderit, necessitatibus cumque! Quam odio sapiente nihil delectus.</p>
+                        </div>
+
+                        <h4 class="main-header font-weight-bold text-justify">give a man a program, frustrate him for a day. teach a man to program, frustrate him for a lifetime</h4>
+                        <div class="blog-main text-justify text-muted">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, illo laborum! Nulla dignissimos ipsam suscipit dicta in, voluptatem dolores labore et a? Iste temporibus hic commodi reiciendis maiores distinctio libero perferendis. Vel praesentium voluptates deserunt animi magni veritatis fugit, rerum facere minima reprehenderit, necessitatibus cumque! Quam odio sapiente nihil delectus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="copy-right text-muted text-center">
+                            Copyright &copy; Your Website 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(window).on('scroll', function() {
+                    if($(window).scrollTop()) {
+                        $(".sub-header").addClass('active')
+                    } else {
+                        $(".sub-header").removeClass('active');
+                    }
+                })
+            });
+        </script>
+    
+    </body>
+    </html>
